@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --moderate-violet: hsl(263, 55%, 52%);
+--very-dark-grayish-blue: hsl(217, 19%, 35%);
+-very-darkblackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+--dark-grayish-blue: hsl(217,19%,35%);
+
+}
+body{
+    min-height: 100vh;
+    background-color: var(--Light-grayish-blue);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: medium;
+}
+
+.section-testimonials{
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    max-width: 77%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+    justify-content: center;
+}
+
+.section-testimonials > * {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 10px;
+    padding: 1.9rem 2.6rem;
+    font-size: small;
+}
+
+.section__1,
+.section__2,
+.section__5{
+    color: var(--White);
+}
+
+.section__3,
+.section__4{
+    background-color: var(--White);
+    color: black;
+}
+
+.section__1{
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 18%;
+    background-size: 100px;
+    grid-column: span 2;
+    background-color: var(--moderate-violet);
+}
+
+.section__2{
+    background-color: var(--dark-grayish-blue);
+}
+.section__3{
+    color: var(--dark-grayish-blue);
+    grid-row: span 2;
+    word-spacing: 1.5px;
+}
+
+.section__5{
+    background-color: black;
+    grid-column: span 2;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.content{
+    opacity: 50%;
+    font-size: 1rem;
+    padding-top: 0.4rem;
+    line-height: 1.4rem;
+}
+.author-img{
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+@media screen and (max-width: 1200px){
+    .section-testimonials{
+        margin-top: 5rem;
+    }
+    .section__2,
+    .section__4{
+        grid-column: span 2;
+    }
+    .section__3{
+        grid-row: span 1;
+        grid-column: span 4;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .section-testimonials > * {
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+}
+.attribution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.highlight{
+    font-size: 1rem;
+    word-spacing: 1px;
+
+}
+.highlight p{
+    font-weight: 200;
+}
+.main__content-1{
+    color: rgb(58, 55, 55);
+
+}
+.main__content-2{
+    color: rgb(110, 107, 107);
+}
+.main__content-3{
+    color: rgb(110, 107, 107);
+}
